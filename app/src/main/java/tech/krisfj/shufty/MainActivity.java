@@ -95,33 +95,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return builder.toString();
     }
-
-    /*
-    // See: https://gist.github.com/dwelch2344/
-    private static final String FOLDER = "/Users/dave/Desktop/encrypted/";
-    private static final String PASS = "abc123";
-    String decrypt() {
-
-        Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
-
-        File encryptedFile = new File(FOLDER + "symmetric.txt.gpg");
-        byte[]  encryptedByteArray = FileUtils.readFileToByteArray(encryptedFile);
-
-        byte[] decryptedByteArray = ByteArrayHandler.decrypt(encryptedByteArray, PASS.toCharArray());
-        String decryptedString = new String(decryptedByteArray);
-
-        System.out.println(decryptedString);
-
-        System.out.println();
-
-        byte[] encryptedAgain = ByteArrayHandler.encrypt(decryptedByteArray, PASS.toCharArray(), "foobar.txt", SymmetricKeyAlgorithmTags.AES_256, true);
-        String encryptedAgainString = new String(encryptedAgain);
-        System.out.println(encryptedAgainString);
-
-
-        byte[] decryptedAgainByteArray = ByteArrayHandler.decrypt(encryptedAgain, PASS.toCharArray());
-        String decrypteAgaindString = new String(decryptedAgainByteArray);
-        System.out.println(decrypteAgaindString);
-    }
-    */
 }
